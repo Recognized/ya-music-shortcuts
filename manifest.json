@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "name": "Shortcuts for Yandex.Music™",
+  "version": "1.0.0",
+  "description": "Shortcuts support for Yandex.Music™. \nIcons made by https://www.flaticon.com/authors/smashicons from www.flaticon.com",
+  "icons": {
+    "128": "128.png"
+  },
+  "browser_action": {
+    "default_title": "Yandex.Music™ global shortcuts"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.yandex.ru/*"
+      ],
+      "js": [
+        "in-content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; img-src * data: 'self' 'unsafe-eval'",
+  "offline_enabled": true,
+  "permissions": [],
+  "commands": {
+    "next-track": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+3"
+      },
+      "description": "Go to next",
+      "global": true
+    },
+    "prev-track": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1"
+      },
+      "description": "Go to previous",
+      "global": true
+    },
+    "toggle-pause": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+2"
+      },
+      "description": "Play/pause",
+      "global": true
+    }
+  }
+}

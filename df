@@ -1,0 +1,87 @@
+[33mcommit 640ab2cc8521ec24ba902478236da72ae9ab59fe[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: vladislav.saifulin <vladislav.saifulin@jetbrains.com>
+Date:   Sat Oct 5 02:55:47 2019 +0300
+
+    first commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bdd5def[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,75 @@[m
+[32m+[m[32m# chrome-extension-template[m
+[32m+[m
+[32m+[m[32m## Introduction[m
+[32m+[m
+[32m+[m[32mThis project aims to provide an easy to use boilerplate for chrome extensions, showcasing communication between its different scripts.[m
+[32m+[m
+[32m+[m[32mNot all extensions will need of all scripts or all types of messaging. All code snippets are optional. Text and images should be replaced with your own.[m
+[32m+[m
+[32m+[m[32m## Installation[m
+[32m+[m
+[32m+[m[32mClone the repo:[m
+[32m+[m
+[32m+[m[32m```[m
+[32m+[m[32mgit clone git@github.com:edrpls/chrome-extension-template.git name-of-your-project[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mSet git to track your own repository instead of this one:[m
+[32m+[m
+[32m+[m[32m```[m
+[32m+[m[32mgit remote set-url --delete origin git@github.com:edrpls/chrome-extension-template.git # Remove old origin[m
+[32m+[m[32mgit remote set-url --add origin [YOUR REPO URL] # Add new origin[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mInstall dependencies:[m
+[32m+[m
+[32m+[m[32m```[m
+[32m+[m[32myarn install # or npm install[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m## Usage[m
+[32m+[m
+[32m+[m[32mTo run a development server that will watch for file changes and rebuild the scripts, run:[m
+[32m+[m
+[32m+[m[32m```[m
+[32m+[m[32myarn start[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mTo just build the files without the development server:[m
+[32m+[m
+[32m+[m[32m```[m
+[32m+[m[32myarn build[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mBoth commands will create a `dist/` directory, it will contain the built files that should be loaded into the browser or packed.[m
+[32m+[m
+[32m+[m[32m## Load into Chrome[m
+[32m+[m
+[32m+[m[32mTo load the built files into Chrome, open [chrome://extensions/](chrome://extensions/).[m
+[32m+[m
+[32m+[m[32mEnable "Developer mode" if it's not enabled yet:[m
+[32m+[m
+[32m+[m[32m![Developer Mode Checkbox](assets/dev_mode.png)[m
+[32m+[m
+[32m+[m[32mClick on "Load unpacked":[m
+[32m+[m
+[32m+[m[32m![Load Unpacked Button](assets/load_unpacked.png)[m
+[32m+[m
+[32m+[m[32mFind the `dist/` directory on your system and open it.[m
+[32m+[m
+[32m+[m[32mThe extension should be now at the top of the page:[m
+[32m+[m
+[32m+[m[32m![Extension Loaded](assets/ext_loaded.png)[m
+[32m+[m
+[32m+[m[32m## Publishing[m
+[32m+[m
+[32m+[m[32m[Follow the official docs](https://developer.chrome.com/webstore/publish) to learn how to publish a Chrome extension.[m
+[32m+[m[32mPlease note that Google has its own process to review public extensions and using this boilerplate **does not guarantee** that the extension will pass it. Passing the review process is your responsibility![m
+[32m+[m
+[32m+[m[32m## External resources[m
+[32m+[m
+[32m+[m[32m*   [Sample extension built with this template](https://github.com/edrpls/social-network-alert)[m
+[32m+[m
+[32m+[m[32m*   [Chrome Developer Documentation](https://developer.chrome.com/extensions/devguide)[m
+[32m+[m
+[32m+[m[32m*   [Overview slides about Chrome Extensions](https://github.com/edrpls/chrome-extensions-what-why-how)[m
